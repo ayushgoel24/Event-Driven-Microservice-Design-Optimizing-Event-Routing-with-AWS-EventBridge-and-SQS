@@ -14,8 +14,11 @@
 5. [Benefits](#benefits)
 6. [Impact](#impact)
 7. [Conclusion](#conclusion)
+8. [Note](#note)
+9. [Contact](#contact)
+10. [Acknowledgements](#acknowledgements)
 
-## Overview:
+## Overview
 <p style="text-align: justify"> In the complex landscape of e-commerce, our project embraced a sophisticated event-driven microservice architecture, utilizing the power of AWS EventBridge and SQS to streamline the dynamic challenges of efficiently routing, handling, and processing a vast influx of diverse state change events. These events, which encapsulate vital data regarding orders, inventories, and returns, originate from a myriad of downstream systems operating across different sellers and marketplaces. By implementing a decoupled system design, the architecture ensured scalability and resilience. Redundant API calls were dramatically reduced, optimizing system throughput and latency. Additionally, with the integration of AWS CloudWatch, we achieved granular monitoring and alerting capabilities, ensuring that the system's health and performance were consistently at their peak. This holistic approach resulted in a robust, agile, and scalable system design that catered to the ever-evolving demands of modern e-commerce platforms. </p>
 
 
@@ -40,9 +43,24 @@
 <p style="text-align: justify">This architecture, with its decoupled design, ensures that the system remains resilient to failures, scalable to handle event spikes, and efficient in processing each event in a timely manner.</p>
 
 ## Results
-The integration with AWS EventBridge and SQS has delivered tangible results:
-- **Reduced API Calls**: Witnessed a 25% reduction in unnecessary API calls.
-- **System Efficiency**: Achieved a 30% increase in overall system efficiency.
+
+<p style="text-align: justify">The integration of the event-driven microservice architecture, powered by AWS EventBridge and SQS, yielded tangible and transformative results for our e-commerce operations.</p>
+
+1. <p style="text-align: justify"><b>Performance Metrics</b>: The foremost achievement was the observable 25% reduction in superfluous API calls, leading to an overall boost in system efficiency by 30%. Such an optimization meant faster response times, quicker event processing, and enhanced user experiences.</p>
+
+2. <p style="text-align: justify"><b>Reliability Quotient</b>: With the inclusion of the Dead Letter Queue (DLQ) and repushing mechanisms, the rate of successful event processing saw a significant rise. Events that previously might have been lost or ignored due to transient issues were now being captured and processed, increasing the overall reliability quotient of the system.</p>
+
+3. <p style="text-align: justify"><b>Resource Allocation</b>: The efficient event routing and processing resulted in better resource utilization. This meant that computing resources, previously stretched thin due to redundant operations or inefficiencies, were now more focused and aptly utilized, leading to cost savings and a more optimized infrastructure footprint.</p>
+
+4. <p style="text-align: justify"><b>Response Time</b>: The system's response time, especially in peak traffic scenarios like flash sales or promotional periods, improved noticeably. This was mainly due to the streamlined event processing, the scalability of SQS consumers, and the efficient routing via AWS EventBridge.</p>
+
+5. <p style="text-align: justify"><b>Proactive Issue Resolution</b>: With the granular monitoring capabilities offered by AWS CloudWatch, potential bottlenecks or issues were identified and addressed in their nascent stages. This proactive approach led to a considerable reduction in system downtimes or performance hiccups.</p>
+
+6. <p style="text-align: justify"><b>Stakeholder Feedback</b>: Both internal and external stakeholders, including sellers on the platform and end-users, reported a marked improvement in data consistency and system responsiveness. This positive feedback was a testament to the transformative impact of the new architecture on the platform's operational dynamics.</p>
+
+7. <p style="text-align: justify"><b>Operational Resilience</b>: The architecture demonstrated exceptional resilience during stress tests, simulating high event loads or potential failure scenarios. Such resilience ensured that the platform remained operational and efficient even during unprecedented challenges or event spikes.</p>
+
+<p style="text-align: justify">In summary, the results obtained post-integration were a testament to the efficacy of the architectural changes. Not only did the system demonstrate marked improvements in metrics, but it also laid the foundation for a more agile, resilient, and user-centric e-commerce platform.</p>
 
 ## Key Achievements
 - <p style="text-align: justify"><b>Enhanced System Efficiency</b>: The introduction of AWS EventBridge led to a remarkable 25% reduction in API calls, optimizing the system efficiency by 30%.</p>
@@ -75,4 +93,13 @@ The integration with AWS EventBridge and SQS has delivered tangible results:
 <p style="text-align: justify">In essence, the architectural enhancements have not only streamlined and strengthened the internal operations but have also played a pivotal role in elevating the overall user experience, leading to higher satisfaction levels and reinforcing the platform's reputation for reliability and efficiency.</p>
 
 ## Conclusion
-This event-driven microservice design represents a paradigm shift in how events can be optimally routed. Although the core codebase remains proprietary, the architecture, benefits, and results detailed here offer invaluable insights for those looking to optimize their event-driven systems.
+<p style="text-align: justify">This event-driven microservice design represents a paradigm shift in how events can be optimally routed. Although the core codebase remains proprietary, the architecture, benefits, and results detailed here offer invaluable insights for those looking to optimize their event-driven systems.</p>
+
+## Note
+<p style="text-align: justify">Please note that this project was executed during my tenure at a previous organization, and due to confidentiality agreements, it remains non-public. Nonetheless, discourse around its architecture, design principles, and best practices is always encouraged.</p>
+
+## Contact
+<p style="text-align: justify">For further inquiries or to delve deeper into project-related discussions, please don't hesitate to reach out.</p>
+
+## Acknowledgements
+<p style="text-align: justify">I'd like to extend my sincere gratitude to the entire team and contributors who played an instrumental role in bringing this project to fruition. Your expertise, dedication, and collaborative spirit were pivotal in achieving the goals set out for this system. Additionally, a special thanks to the open-source community for providing tools and platforms that served as the foundation for this project. Your relentless pursuit of innovation continues to inspire and drive projects like ours.</p>
